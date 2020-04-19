@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"gsm_mqtt\startup_stm32f103xb.o"
+"gsm_mqtt\main.o"
+"gsm_mqtt\stm32f1xx_it.o"
+"gsm_mqtt\stm32f1xx_hal_msp.o"
+"gsm_mqtt\system_stm32f1xx.o"
+"gsm_mqtt\stm32f1xx_hal_uart.o"
+"gsm_mqtt\stm32f1xx_hal_cortex.o"
+"gsm_mqtt\stm32f1xx_hal_pwr.o"
+"gsm_mqtt\stm32f1xx_hal.o"
+"gsm_mqtt\stm32f1xx_hal_gpio.o"
+"gsm_mqtt\stm32f1xx_hal_gpio_ex.o"
+"gsm_mqtt\stm32f1xx_hal_flash.o"
+"gsm_mqtt\stm32f1xx_hal_flash_ex.o"
+"gsm_mqtt\stm32f1xx_hal_rcc_ex.o"
+"gsm_mqtt\stm32f1xx_hal_rcc.o"
+"gsm_mqtt\stm32f1xx_hal_dma.o"
+"gsm_mqtt\stm32f1xx_hal_tim.o"
+"gsm_mqtt\stm32f1xx_hal_tim_ex.o"
+--library_type=microlib --strict --scatter "GSM_MQTT\GSM_MQTT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GSM_MQTT.map" -o GSM_MQTT\GSM_MQTT.axf
